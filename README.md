@@ -1,5 +1,7 @@
 # Hi there 👋 I'm Rishi Raj
 
+![Rishi Raj Cosmic Banner](https://github.com/user-attachments/assets/b5fb1823-69ea-4e3f-ac74-25f198f2eaf6)
+
 🎓 **Doctoral Researcher** at Sorbonne Université, Paris  
 🔬 Exploring the frontiers of **theoretical physics** with a focus on **quantum gravity**, **string theory**, and related mathematics. My current thesis revolves around **BPS Black Holes** and **Donaldson-Thomas invariants**.
 
