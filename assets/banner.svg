@@ -1,294 +1,57 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05060d"/>
-      <stop offset="55%" stop-color="#0b0e1f"/>
-      <stop offset="100%" stop-color="#140a24"/>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f2b84b" stroke-width="0.5" opacity="0.07"/>
+    </pattern>
+    <linearGradient id="fadeEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a0b10" stop-opacity="1"/>
+      <stop offset="8%" stop-color="#0a0b10" stop-opacity="0"/>
+      <stop offset="92%" stop-color="#0a0b10" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0b10" stop-opacity="1"/>
     </linearGradient>
-    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff7d6" stop-opacity="0.95"/>
-      <stop offset="18%" stop-color="#fde68a" stop-opacity="0.55"/>
-      <stop offset="45%" stop-color="#f97316" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="ambientGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="ringGrad0" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#fde68a" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#fde68a" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#fde68a" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbc266" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#fbc266" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#fbc266" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#fbc266" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fa9f42" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#fa9f42" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#fa9f42" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#fa9f42" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f97b1e" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#f97b1e" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#f97b1e" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f97b1e" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f66934" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#f66934" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#f66934" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f66934" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f25b5c" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#f25b5c" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#f25b5c" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f25b5c" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad6" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ee4e84" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#ee4e84" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#ee4e84" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#ee4e84" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e14aa7" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#e14aa7" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#e14aa7" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#e14aa7" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad8" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#cc4ec4" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#cc4ec4" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#cc4ec4" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#cc4ec4" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad9" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#b752e1" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#b752e1" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#b752e1" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#b752e1" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad10" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a256f6" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#a256f6" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#a256f6" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#a256f6" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad11" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8d5bf4" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#8d5bf4" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#8d5bf4" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#8d5bf4" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad12" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7860f2" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#7860f2" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#7860f2" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#7860f2" stop-opacity="0.05"/>
-    </linearGradient>
-    <linearGradient id="ringGrad13" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.05"/>
-      <stop offset="45%" stop-color="#6366f1" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#6366f1" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.05"/>
-    </linearGradient>
-    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="#0a0b10"/>
+  <rect width="1200" height="260" fill="url(#grid)"/>
+  <rect width="1200" height="260" fill="url(#fadeEdge)"/>
 
-  <!-- ambient nebula glow, upper left -->
-  <circle cx="220" cy="70" r="260" fill="url(#ambientGlow)"/>
+  <!-- thin accent frame -->
+  <rect x="0.75" y="0.75" width="1198.5" height="258.5" fill="none" stroke="#f2b84b" stroke-width="1" opacity="0.35"/>
 
-  <!-- starfield -->
-  <g>
-    <circle cx="767.3" cy="7.5" r="0.8" fill="#ffffff" opacity="0.33"/>
-<circle cx="167.4" cy="30.7" r="1.2" fill="#ffffff" opacity="0.82"/>
-<circle cx="104.3" cy="126.6" r="0.5" fill="#ffffff" opacity="0.22"/>
-<circle cx="279.2" cy="180.6" r="1" fill="#ffffff" opacity="0.30"/>
-<circle cx="779.9" cy="163.5" r="0.6" fill="#ffffff" opacity="0.49"/>
-<circle cx="333.8" cy="260.8" r="1.5" fill="#ffffff" opacity="0.75"/>
-<circle cx="837.8" cy="102.1" r="0.6" fill="#ffffff" opacity="0.31"/>
-<circle cx="916.2" cy="30.7" r="1" fill="#ffffff" opacity="0.22"/>
-<circle cx="1017.0" cy="181.1" r="1.5" fill="#ffffff" opacity="0.18"/>
-<circle cx="551.3" cy="37.4" r="1" fill="#ffffff" opacity="0.21"/>
-<circle cx="351.8" cy="188.6" r="1.5" fill="#ffffff" opacity="0.42"/>
-<circle cx="230.7" cy="20.9" r="1.2" fill="#ffffff" opacity="0.32"/>
-<circle cx="347.3" cy="23.9" r="0.6" fill="#ffffff" opacity="0.80"/>
-<circle cx="456.2" cy="136.0" r="1.5" fill="#ffffff" opacity="0.42"/>
-<circle cx="444.2" cy="62.9" r="0.8" fill="#ffffff" opacity="0.68"/>
-<circle cx="820.3" cy="21.4" r="1.2" fill="#ffffff" opacity="0.28"/>
-<circle cx="875.0" cy="49.0" r="1" fill="#ffffff" opacity="0.35"/>
-<circle cx="1110.5" cy="206.4" r="0.6" fill="#ffffff" opacity="0.66"/>
-<circle cx="1011.4" cy="232.8" r="0.6" fill="#ffffff" opacity="0.77"/>
-<circle cx="966.1" cy="120.3" r="0.5" fill="#ffffff" opacity="0.31"/>
-<circle cx="1131.5" cy="262.9" r="0.8" fill="#ffffff" opacity="0.31"/>
-<circle cx="599.1" cy="265.4" r="1.2" fill="#ffffff" opacity="0.49"/>
-<circle cx="317.9" cy="74.0" r="1" fill="#ffffff" opacity="0.55"/>
-<circle cx="896.4" cy="128.5" r="1" fill="#ffffff" opacity="0.45"/>
-<circle cx="263.2" cy="299.3" r="1" fill="#ffffff" opacity="0.52"/>
-<circle cx="906.9" cy="258.3" r="0.6" fill="#ffffff" opacity="0.62"/>
-<circle cx="950.5" cy="126.6" r="0.5" fill="#ffffff" opacity="0.44"/>
-<circle cx="715.1" cy="140.4" r="0.8" fill="#ffffff" opacity="0.88"/>
-<circle cx="1032.9" cy="3.4" r="1.2" fill="#ffffff" opacity="0.24"/>
-<circle cx="1061.7" cy="225.3" r="1.5" fill="#ffffff" opacity="0.63"/>
-<circle cx="133.9" cy="130.4" r="1" fill="#ffffff" opacity="0.15"/>
-<circle cx="866.5" cy="215.9" r="1" fill="#ffffff" opacity="0.72"/>
-<circle cx="609.2" cy="31.9" r="1.2" fill="#ffffff" opacity="0.37"/>
-<circle cx="766.7" cy="182.7" r="0.6" fill="#ffffff" opacity="0.43"/>
-<circle cx="193.9" cy="286.0" r="1" fill="#ffffff" opacity="0.84"/>
-<circle cx="718.7" cy="146.6" r="0.5" fill="#ffffff" opacity="0.85"/>
-<circle cx="1054.5" cy="249.5" r="0.8" fill="#ffffff" opacity="0.33"/>
-<circle cx="289.0" cy="170.2" r="0.5" fill="#ffffff" opacity="0.21"/>
-<circle cx="583.2" cy="20.8" r="1.5" fill="#ffffff" opacity="0.55"/>
-<circle cx="150.9" cy="197.9" r="1" fill="#ffffff" opacity="0.27"/>
-<circle cx="633.2" cy="182.0" r="0.6" fill="#ffffff" opacity="0.85"/>
-<circle cx="906.3" cy="207.0" r="1.2" fill="#ffffff" opacity="0.38"/>
-<circle cx="1194.2" cy="195.0" r="1" fill="#ffffff" opacity="0.82"/>
-<circle cx="541.8" cy="74.4" r="0.5" fill="#ffffff" opacity="0.40"/>
-<circle cx="706.0" cy="69.0" r="0.6" fill="#ffffff" opacity="0.16"/>
-<circle cx="849.4" cy="17.7" r="0.5" fill="#ffffff" opacity="0.83"/>
-<circle cx="1031.6" cy="21.3" r="0.6" fill="#ffffff" opacity="0.36"/>
-<circle cx="582.5" cy="161.8" r="1.2" fill="#ffffff" opacity="0.85"/>
-<circle cx="685.3" cy="141.8" r="1.5" fill="#ffffff" opacity="0.50"/>
-<circle cx="488.5" cy="28.3" r="1.2" fill="#ffffff" opacity="0.47"/>
-<circle cx="508.3" cy="140.1" r="1.2" fill="#ffffff" opacity="0.19"/>
-<circle cx="784.1" cy="193.9" r="0.5" fill="#ffffff" opacity="0.45"/>
-<circle cx="407.2" cy="258.5" r="0.6" fill="#ffffff" opacity="0.29"/>
-<circle cx="643.5" cy="42.1" r="0.6" fill="#ffffff" opacity="0.36"/>
-<circle cx="299.8" cy="277.0" r="1" fill="#ffffff" opacity="0.76"/>
-<circle cx="1027.2" cy="29.4" r="1.2" fill="#ffffff" opacity="0.90"/>
-<circle cx="1003.2" cy="290.7" r="1.5" fill="#ffffff" opacity="0.79"/>
-<circle cx="199.6" cy="145.7" r="0.6" fill="#ffffff" opacity="0.80"/>
-<circle cx="1082.9" cy="49.4" r="0.5" fill="#ffffff" opacity="0.89"/>
-<circle cx="318.2" cy="235.2" r="1" fill="#ffffff" opacity="0.36"/>
-<circle cx="835.9" cy="219.2" r="1.5" fill="#ffffff" opacity="0.57"/>
-<circle cx="862.1" cy="46.4" r="0.8" fill="#ffffff" opacity="0.31"/>
-<circle cx="70.2" cy="220.7" r="0.5" fill="#ffffff" opacity="0.71"/>
-<circle cx="68.6" cy="175.3" r="1" fill="#ffffff" opacity="0.84"/>
-<circle cx="637.4" cy="17.1" r="1" fill="#ffffff" opacity="0.21"/>
-<circle cx="223.0" cy="178.5" r="1.2" fill="#ffffff" opacity="0.80"/>
-<circle cx="484.5" cy="282.5" r="1" fill="#ffffff" opacity="0.33"/>
-<circle cx="713.4" cy="185.8" r="1" fill="#ffffff" opacity="0.64"/>
-<circle cx="678.3" cy="94.9" r="0.8" fill="#ffffff" opacity="0.30"/>
-<circle cx="859.4" cy="71.6" r="1" fill="#ffffff" opacity="0.25"/>
-<circle cx="774.6" cy="137.2" r="1.5" fill="#ffffff" opacity="0.85"/>
-<circle cx="11.2" cy="186.3" r="1" fill="#ffffff" opacity="0.90"/>
-<circle cx="87.9" cy="63.9" r="0.8" fill="#ffffff" opacity="0.25"/>
-<circle cx="418.8" cy="20.6" r="0.6" fill="#ffffff" opacity="0.43"/>
-<circle cx="189.3" cy="250.1" r="1.2" fill="#ffffff" opacity="0.38"/>
-<circle cx="1180.6" cy="242.1" r="1" fill="#ffffff" opacity="0.16"/>
-<circle cx="980.5" cy="89.8" r="1.2" fill="#ffffff" opacity="0.23"/>
-<circle cx="1053.8" cy="79.3" r="0.5" fill="#ffffff" opacity="0.71"/>
-<circle cx="186.5" cy="84.5" r="0.6" fill="#ffffff" opacity="0.69"/>
-<circle cx="244.3" cy="190.3" r="0.8" fill="#ffffff" opacity="0.53"/>
-<circle cx="301.3" cy="272.4" r="0.5" fill="#ffffff" opacity="0.22"/>
-<circle cx="508.3" cy="83.0" r="0.5" fill="#ffffff" opacity="0.40"/>
-<circle cx="157.0" cy="293.9" r="0.6" fill="#ffffff" opacity="0.71"/>
-<circle cx="662.0" cy="128.3" r="0.5" fill="#ffffff" opacity="0.23"/>
-<circle cx="1134.1" cy="207.3" r="0.6" fill="#ffffff" opacity="0.56"/>
-<circle cx="1001.5" cy="174.8" r="0.6" fill="#ffffff" opacity="0.47"/>
-<circle cx="50.2" cy="109.4" r="1.5" fill="#ffffff" opacity="0.88"/>
-<circle cx="47.9" cy="107.3" r="1.2" fill="#ffffff" opacity="0.34"/>
-<circle cx="123.4" cy="234.0" r="1.5" fill="#ffffff" opacity="0.45"/>
-<circle cx="744.8" cy="46.4" r="0.6" fill="#ffffff" opacity="0.80"/>
-<circle cx="1171.4" cy="243.2" r="1" fill="#ffffff" opacity="0.17"/>
-<circle cx="883.9" cy="99.7" r="1" fill="#ffffff" opacity="0.75"/>
-<circle cx="1036.9" cy="243.2" r="0.8" fill="#ffffff" opacity="0.27"/>
-<circle cx="841.5" cy="114.8" r="0.5" fill="#ffffff" opacity="0.79"/>
-<circle cx="266.9" cy="245.0" r="1" fill="#ffffff" opacity="0.41"/>
-<circle cx="984.6" cy="261.4" r="0.6" fill="#ffffff" opacity="0.17"/>
-<circle cx="231.8" cy="98.5" r="1.5" fill="#ffffff" opacity="0.20"/>
-<circle cx="928.0" cy="105.3" r="1" fill="#ffffff" opacity="0.45"/>
-<circle cx="1177.4" cy="160.9" r="0.5" fill="#ffffff" opacity="0.24"/>
-<circle cx="1164.5" cy="53.6" r="0.8" fill="#ffffff" opacity="0.18"/>
-<circle cx="715.9" cy="103.7" r="1.5" fill="#ffffff" opacity="0.39"/>
-<circle cx="727.5" cy="153.4" r="1" fill="#ffffff" opacity="0.82"/>
-<circle cx="228.1" cy="13.3" r="1" fill="#ffffff" opacity="0.15"/>
-<circle cx="1110.7" cy="161.5" r="1.2" fill="#ffffff" opacity="0.86"/>
-<circle cx="884.4" cy="59.1" r="1" fill="#ffffff" opacity="0.20"/>
-<circle cx="797.1" cy="99.1" r="0.8" fill="#ffffff" opacity="0.65"/>
-<circle cx="149.6" cy="270.0" r="1" fill="#ffffff" opacity="0.38"/>
-<circle cx="490.1" cy="120.7" r="0.8" fill="#ffffff" opacity="0.57"/>
-<circle cx="230.2" cy="199.5" r="1" fill="#ffffff" opacity="0.66"/>
-<circle cx="1083.4" cy="184.7" r="0.8" fill="#ffffff" opacity="0.45"/>
-<circle cx="1000.5" cy="91.2" r="0.6" fill="#ffffff" opacity="0.47"/>
-<circle cx="696.0" cy="196.4" r="1" fill="#ffffff" opacity="0.48"/>
-<circle cx="810.8" cy="153.4" r="1.5" fill="#ffffff" opacity="0.83"/>
-<circle cx="955.2" cy="50.9" r="0.5" fill="#ffffff" opacity="0.36"/>
-<circle cx="796.6" cy="185.8" r="0.5" fill="#ffffff" opacity="0.76"/>
-<circle cx="901.4" cy="201.8" r="0.6" fill="#ffffff" opacity="0.75"/>
-<circle cx="176.8" cy="13.9" r="1" fill="#ffffff" opacity="0.61"/>
-<circle cx="922.2" cy="136.6" r="1.2" fill="#ffffff" opacity="0.58"/>
-<circle cx="862.0" cy="115.2" r="1" fill="#ffffff" opacity="0.33"/>
-<circle cx="787.3" cy="1.7" r="1.5" fill="#ffffff" opacity="0.80"/>
-<circle cx="1062.6" cy="233.5" r="0.6" fill="#ffffff" opacity="0.28"/>
-<circle cx="1149.6" cy="155.4" r="0.5" fill="#ffffff" opacity="0.57"/>
-<circle cx="1101.0" cy="36.4" r="0.6" fill="#ffffff" opacity="0.75"/>
-<circle cx="801.1" cy="296.4" r="1" fill="#ffffff" opacity="0.39"/>
-<circle cx="906.3" cy="132.8" r="1.5" fill="#ffffff" opacity="0.69"/>
-<circle cx="605.7" cy="249.2" r="1" fill="#ffffff" opacity="0.48"/>
-<circle cx="191.0" cy="258.4" r="1" fill="#ffffff" opacity="0.34"/>
-<circle cx="296.7" cy="191.3" r="1.5" fill="#ffffff" opacity="0.73"/>
-<circle cx="581.5" cy="71.8" r="1" fill="#ffffff" opacity="0.21"/>
-<circle cx="342.9" cy="81.5" r="0.8" fill="#ffffff" opacity="0.82"/>
-<circle cx="96.7" cy="45.2" r="1" fill="#ffffff" opacity="0.67"/>
-<circle cx="847.7" cy="19.3" r="1" fill="#ffffff" opacity="0.40"/>
-<circle cx="559.1" cy="18.7" r="1.5" fill="#ffffff" opacity="0.47"/>
-<circle cx="1085.8" cy="175.2" r="1.2" fill="#ffffff" opacity="0.16"/>
-<circle cx="1056.8" cy="172.7" r="1" fill="#ffffff" opacity="0.15"/>
-<circle cx="422.1" cy="226.0" r="1.5" fill="#ffffff" opacity="0.82"/>
-<circle cx="1002.9" cy="161.5" r="1.2" fill="#ffffff" opacity="0.56"/>
-<circle cx="723.9" cy="66.2" r="0.6" fill="#ffffff" opacity="0.35"/>
-<circle cx="582.8" cy="116.7" r="1.2" fill="#ffffff" opacity="0.66"/>
-<circle cx="485.2" cy="49.5" r="1" fill="#ffffff" opacity="0.84"/>
+  <!-- vertical divider -->
+  <line x1="760" y1="40" x2="760" y2="220" stroke="#f2b84b" stroke-width="1" opacity="0.5"/>
+
+  <!-- left: equations -->
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#f5f3ee">
+    <text x="70" y="108" font-size="38" font-style="italic">S</text>
+    <text x="102" y="108" font-size="34" font-style="normal" opacity="0.85">=</text>
+    <text x="140" y="108" font-size="38" font-style="italic">A</text>
+    <text x="177" y="108" font-size="34" opacity="0.85">/</text>
+    <text x="197" y="108" font-size="38">4</text>
+    <text x="224" y="108" font-size="38" font-style="italic">G</text>
+    <text x="256" y="116" font-size="20" font-style="italic" opacity="0.8">N</text>
+    <text x="380" y="108" font-size="16" font-style="normal" fill="#9a9488" letter-spacing="0.5">Bekenstein&#8211;Hawking entropy</text>
+
+    <text x="70" y="180" font-size="38" font-style="italic">M</text>
+    <text x="112" y="180" font-size="34" opacity="0.85">=</text>
+    <text x="150" y="180" font-size="38" opacity="0.85">|</text>
+    <text x="164" y="180" font-size="38" font-style="italic">Z</text>
+    <text x="196" y="180" font-size="30">(</text>
+    <text x="212" y="180" font-size="34" font-style="italic">&#947;</text>
+    <text x="236" y="180" font-size="30">)</text>
+    <text x="254" y="180" font-size="38" opacity="0.85">|</text>
+    <text x="380" y="180" font-size="16" fill="#9a9488" letter-spacing="0.5">BPS mass bound</text>
+
+    <text x="70" y="234" font-size="14" fill="#6e6a60" letter-spacing="1.5">QUANTUM GRAVITY &#183; STRING THEORY &#183; HOLOGRAPHIC DUALITY</text>
   </g>
 
-  <!-- accretion disk -->
-  <g filter="url(#softBlur)">
-    <ellipse cx="860" cy="150" rx="60.0" ry="16.8" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad0)" stroke-width="3.30" opacity="0.44"/>
-<ellipse cx="860" cy="150" rx="83.1" ry="23.3" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad1)" stroke-width="3.13" opacity="0.56"/>
-<ellipse cx="860" cy="150" rx="106.2" ry="29.7" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad2)" stroke-width="2.96" opacity="0.67"/>
-<ellipse cx="860" cy="150" rx="129.2" ry="36.2" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad3)" stroke-width="2.79" opacity="0.76"/>
-<ellipse cx="860" cy="150" rx="152.3" ry="42.6" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad4)" stroke-width="2.62" opacity="0.83"/>
-<ellipse cx="860" cy="150" rx="175.4" ry="49.1" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad5)" stroke-width="2.45" opacity="0.87"/>
-<ellipse cx="860" cy="150" rx="198.5" ry="55.6" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad6)" stroke-width="2.28" opacity="0.90"/>
-<ellipse cx="860" cy="150" rx="221.5" ry="62.0" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad7)" stroke-width="2.12" opacity="0.90"/>
-<ellipse cx="860" cy="150" rx="244.6" ry="68.5" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad8)" stroke-width="1.95" opacity="0.87"/>
-<ellipse cx="860" cy="150" rx="267.7" ry="75.0" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad9)" stroke-width="1.78" opacity="0.83"/>
-<ellipse cx="860" cy="150" rx="290.8" ry="81.4" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad10)" stroke-width="1.61" opacity="0.76"/>
-<ellipse cx="860" cy="150" rx="313.8" ry="87.9" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad11)" stroke-width="1.44" opacity="0.67"/>
-<ellipse cx="860" cy="150" rx="336.9" ry="94.3" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad12)" stroke-width="1.27" opacity="0.56"/>
-<ellipse cx="860" cy="150" rx="360.0" ry="100.8" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad13)" stroke-width="1.10" opacity="0.44"/>
+  <!-- right: computing interests, terminal-style -->
+  <g font-family="'SF Mono', 'Fira Code', Menlo, Consolas, monospace" fill="#f5f3ee">
+    <text x="800" y="76" font-size="14" fill="#f2b84b" opacity="0.9">// computing</text>
+    <text x="800" y="106" font-size="15" opacity="0.9">C++20/23 &#183; CUDA</text>
+    <text x="800" y="132" font-size="15" opacity="0.9">MPI &#183; PBS &#183; HPC</text>
+    <text x="800" y="158" font-size="15" opacity="0.9">FPGA edge inference</text>
+    <text x="800" y="184" font-size="15" opacity="0.9">scientific ML</text>
+    <text x="800" y="222" font-size="13" fill="#6e6a60">CERN STEAM Academy &#8217;26</text>
   </g>
-  <g opacity="0.9">
-    <ellipse cx="860" cy="150" rx="60.0" ry="16.8" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad0)" stroke-width="3.30" opacity="0.44"/>
-<ellipse cx="860" cy="150" rx="83.1" ry="23.3" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad1)" stroke-width="3.13" opacity="0.56"/>
-<ellipse cx="860" cy="150" rx="106.2" ry="29.7" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad2)" stroke-width="2.96" opacity="0.67"/>
-<ellipse cx="860" cy="150" rx="129.2" ry="36.2" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad3)" stroke-width="2.79" opacity="0.76"/>
-<ellipse cx="860" cy="150" rx="152.3" ry="42.6" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad4)" stroke-width="2.62" opacity="0.83"/>
-<ellipse cx="860" cy="150" rx="175.4" ry="49.1" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad5)" stroke-width="2.45" opacity="0.87"/>
-<ellipse cx="860" cy="150" rx="198.5" ry="55.6" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad6)" stroke-width="2.28" opacity="0.90"/>
-<ellipse cx="860" cy="150" rx="221.5" ry="62.0" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad7)" stroke-width="2.12" opacity="0.90"/>
-<ellipse cx="860" cy="150" rx="244.6" ry="68.5" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad8)" stroke-width="1.95" opacity="0.87"/>
-<ellipse cx="860" cy="150" rx="267.7" ry="75.0" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad9)" stroke-width="1.78" opacity="0.83"/>
-<ellipse cx="860" cy="150" rx="290.8" ry="81.4" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad10)" stroke-width="1.61" opacity="0.76"/>
-<ellipse cx="860" cy="150" rx="313.8" ry="87.9" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad11)" stroke-width="1.44" opacity="0.67"/>
-<ellipse cx="860" cy="150" rx="336.9" ry="94.3" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad12)" stroke-width="1.27" opacity="0.56"/>
-<ellipse cx="860" cy="150" rx="360.0" ry="100.8" transform="rotate(-18 860 150)" fill="none" stroke="url(#ringGrad13)" stroke-width="1.10" opacity="0.44"/>
-  </g>
-
-  <!-- event horizon core -->
-  <circle cx="860" cy="150" r="130" fill="url(#coreGlow)"/>
-  <circle cx="860" cy="150" r="17" fill="#05060d"/>
-  <circle cx="860" cy="150" r="17" fill="none" stroke="#fde68a" stroke-width="0.6" opacity="0.6"/>
 </svg>
