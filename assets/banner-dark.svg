@@ -78,7 +78,7 @@
   <rect width="1200" height="260" fill="url(#fadeEdge)"/>
 
   <rect x="0.75" y="0.75" width="1198.5" height="258.5" fill="none" stroke="#f2b84b" stroke-width="1" opacity="0.35"/>
-  <line x1="760" y1="40" x2="760" y2="220" stroke="#f2b84b" stroke-width="1" opacity="0.5"/>
+  <line x1="760" y1="40" x2="760" y2="220" stroke="#f2b84b" stroke-width="1" opacity="0.35"/>
 
   <!-- equation 1: Bekenstein-Hawking entropy -->
   <g transform="translate(70,48) scale(1.3)">
@@ -145,15 +145,15 @@
   </g>
   <text x="320" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#9a9488" letter-spacing="0.5">BPS mass bound</text>
 
-  <text x="70" y="234" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#6e6a60" letter-spacing="1.5">QUANTUM GRAVITY &#183; STRING THEORY &#183; HOLOGRAPHIC DUALITY</text>
+  <text x="70" y="234" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#9a9488" letter-spacing="1.5">QUANTUM GRAVITY &#183; STRING THEORY &#183; HOLOGRAPHIC DUALITY</text>
 
   <!-- right: computing interests, terminal-style -->
-  <g font-family="'SF Mono', 'Fira Code', Menlo, Consolas, monospace" fill="#f5f3ee">
-    <text x="800" y="76" font-size="14" fill="#f2b84b" opacity="0.9">// computing</text>
+  <g font-family="'SF Mono', 'Fira Code', Menlo, Consolas, monospace" fill="rgb(100%, 100%, 100%)">
+    <text x="800" y="76" font-size="14" fill="#f2b84b" opacity="0.95">// computing</text>
     <text x="800" y="106" font-size="15" opacity="0.9">C++20/23 &#183; CUDA</text>
     <text x="800" y="132" font-size="15" opacity="0.9">MPI &#183; PBS &#183; HPC</text>
     <text x="800" y="158" font-size="15" opacity="0.9">FPGA edge inference</text>
     <text x="800" y="184" font-size="15" opacity="0.9">scientific ML</text>
-    <text x="800" y="222" font-size="13" fill="#6e6a60">CERN STEAM Academy &#8217;26</text>
+    <text x="800" y="222" font-size="13" fill="#9a9488">CERN STEAM Academy &#8217;26</text>
   </g>
 </svg>
