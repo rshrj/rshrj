@@ -6,7 +6,7 @@
 
 **theoretical physics → scientific computing**
 
-[papers](#papers) · [linkedin](https://www.linkedin.com/in/rshrj/) · [x](https://x.com/SheavesOfColor) · [instagram](https://www.instagram.com/rshrj/)
+[papers](#papers) · [projects](#projects) · [linkedin](https://www.linkedin.com/in/rshrj/) · [x](https://x.com/SheavesOfColor) · [instagram](https://www.instagram.com/rshrj/)
 
 </div>
 
@@ -27,6 +27,44 @@ Since then I've been retooling toward scientific computing: finished the **CERN 
 - Jejjala, Mondkar, Mukhopadhyay & Raj — *Learning Holographic Horizons* — [Phys. Rev. D 111, 026016](https://doi.org/10.1103/PhysRevD.111.026016) · [arXiv:2312.08442](https://arxiv.org/abs/2312.08442)
 - Pioline & Raj — *Black Hole Quantum Mechanics and Generalized Error Functions* — [JHEP 03, 179](https://doi.org/10.1007/JHEP03(2026)179) · [arXiv:2507.08551](https://arxiv.org/abs/2507.08551)
 - Le Floch, Pioline & Raj — *BPS Dendroscopy on Local P¹ × P¹* — [Annales Henri Poincaré](https://doi.org/10.1007/s00023-026-01666-3) · [arXiv:2412.07680](https://arxiv.org/abs/2412.07680)
+
+### projects
+<a name="projects"></a>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**[matrix-models-cpp](https://github.com/rshrj/matrix-models-cpp)**
+<br>`C++` · HPC
+<br>Simulating the bosonic BFSS matrix model — chaos, holography, and random-matrix thermalization, at the scale my master's thesis needed.
+
+</td>
+<td width="50%" valign="top">
+
+**[r-distro](https://github.com/rshrj/r-distro)**
+<br>`Python` · systems
+<br>Rebuilding the Debian ARM64 base system from source against a pinned snapshot, measuring where self-hosting closes.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[xilinx-counter](https://github.com/rshrj/xilinx-counter)**
+<br>`VHDL` · FPGA
+<br>A clock-to-LEDs counter on the Arty A7 — synchronous logic and a Vivado Tcl/Make flow, built during CERN STEAM Academy.
+
+</td>
+<td width="50%" valign="top">
+
+**[OpenMP_Scaling_Benchmark](https://github.com/rshrj/OpenMP_Scaling_Benchmark)**
+<br>`C++20` · HPC
+<br>A strong-scaling benchmark for OpenMP — how far parallelism actually gets you before it doesn't.
+
+</td>
+</tr>
+</table>
 
 ### stack
 
