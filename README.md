@@ -1,7 +1,5 @@
 <div align="center">
 
-![Rishi Raj Cosmic Banner](https://github.com/user-attachments/assets/f587132e-b89c-415b-ab1c-297b26ee6332)
-
 # Rishi Raj, PhD
 
 **theoretical physics → scientific computing**
