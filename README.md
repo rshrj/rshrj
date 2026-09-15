@@ -12,23 +12,29 @@
 
 <br>
 
-I spent the last few years thinking about black holes, specifically the BPS kind, and what their spectra can tell us about Donaldson–Thomas invariants. Defended my PhD at Sorbonne Université / LPTHE in June 2026, supervised by Boris Pioline.
+> I think about black holes for a living: the BPS kind, mostly, and what their spectra can tell us about Donaldson–Thomas invariants.
 
-Since then I've been retooling toward scientific computing: finished the **CERN STEAM Academy 2026**, a 10-week program covering heterogeneous CPU/GPU computing, FPGA edge inference, and applied deep learning. The through-line is the same either way: build something rigorous, make it fast, check it against reality.
+Defended my PhD at Sorbonne Université / LPTHE in June 2026, supervised by Boris Pioline. Since then I've been retooling toward scientific computing: finished the **CERN STEAM Academy 2026**, a 10-week program covering heterogeneous CPU/GPU computing, FPGA edge inference, and applied deep learning. The through-line is the same either way: build something rigorous, make it fast, check it against reality.
 
-### currently
+---
+
+### ◆ currently
 
 - Benchmarking neural discriminators (transformers, PFNs, XGBoost) for an LHC smuon search, with LPTHE/LPNHE
 - Looking for what's next in accelerated scientific computing / ML for physics
 
-### papers
+---
+
+### ◆ papers
 <a name="papers"></a>
 
 - Jejjala, Mondkar, Mukhopadhyay & Raj, *Learning Holographic Horizons*, [Phys. Rev. D 111, 026016](https://doi.org/10.1103/PhysRevD.111.026016) · [arXiv:2312.08442](https://arxiv.org/abs/2312.08442)
 - Pioline & Raj, *Black Hole Quantum Mechanics and Generalized Error Functions*, [JHEP 03, 179](https://doi.org/10.1007/JHEP03(2026)179) · [arXiv:2507.08551](https://arxiv.org/abs/2507.08551)
 - Le Floch, Pioline & Raj, *BPS Dendroscopy on Local P¹ × P¹*, [Annales Henri Poincaré](https://doi.org/10.1007/s00023-026-01666-3) · [arXiv:2412.07680](https://arxiv.org/abs/2412.07680)
 
-### projects
+---
+
+### ◆ projects
 <a name="projects"></a>
 
 <table>
@@ -66,10 +72,14 @@ Since then I've been retooling toward scientific computing: finished the **CERN 
 </tr>
 </table>
 
-### stack
+---
+
+### ◆ stack
 
 `C++17/20/23` `Python` `PyTorch` `CUDA` `Julia` `Mathematica` `SageMath` · MPI, PBS, ROOT, Boost, GSL · CMake, Docker, GitHub Actions
 
-<br>
+---
 
+<div align="center">
 <sub>dog owner · occasional traveler · still not over how much of physics turns out to be combinatorics</sub>
+</div>
