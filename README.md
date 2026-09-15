@@ -34,10 +34,4 @@ Since then I've been retooling toward scientific computing: finished the **CERN 
 
 <br>
 
-<div align="center">
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=rshrj&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true&count_private=true" alt="stats" />
-</div>
-
-<br>
-
 <sub>dog owner · occasional traveler · still not over how much of physics turns out to be combinatorics</sub>
