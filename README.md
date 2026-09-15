@@ -6,7 +6,7 @@
 
 **theoretical physics → scientific computing**
 
-[papers](#papers) · [projects](#projects) · [linkedin](https://www.linkedin.com/in/rshrj/) · [x](https://x.com/SheavesOfColor) · [instagram](https://www.instagram.com/rshrj/)
+[papers](#papers) · [projects](#projects) · [linkedin](https://www.linkedin.com/in/rshrj/)
 
 </div>
 
